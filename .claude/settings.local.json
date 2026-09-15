@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pandoc REPORT_TECHNICAL.md -o REPORT_TECHNICAL.pdf --pdf-engine=pdflatex)"
+    ]
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "price_data_quality": {
+    "unparseable_dates": 0,
+    "rows_dropped_unparseable_date": 0,
+    "duplicate_dates_found": 14,
+    "duplicate_dates_with_conflicting_values": 0,
+    "rows_dropped_as_duplicate": 14,
+    "price_rows_dropped_missing": 0,
+    "rows_dropped_bad_ohlc": 0,
+    "final_row_count": 986,
+    "date_range": [
+      "2018-01-02",
+      "2021-11-01"
+    ]
+  },
+  "signal_data_quality": {
+    "unparseable_dates": 0,
+    "rows_dropped_unparseable_date": 0,
+    "duplicate_dates_found": 0,
+    "duplicate_dates_with_conflicting_values": 0,
+    "rows_dropped_as_duplicate": 0,
+    "signal_rows_dropped_missing_boolean": 0,
+    "continuous_warmup_nans": {
+      "PB07": 0,
+      "PB08": 0,
+      "BB06": 19,
+      "BB07": 13,
+      "VB05": 19
+    },
+    "final_row_count": 1000,
+    "date_range": [
+      "2018-01-02",
+      "2021-11-01"
+    ]
+  },
+  "join_report": {
+    "price_rows_before_join": 986,
+    "signal_rows_before_join": 1000,
+    "merged_rows": 986,
+    "price_rows_dropped_by_join": 0,
+    "signal_rows_dropped_by_join": 14
+  },
+  "lookahead_check_passed": true,
+  "strategy": {
+    "name": "baseline_pb01",
+    "hypothesis": "Short-term trend persists: be long while PB01 signals an up-trend, flat otherwise.",
+    "signals_used": [
+      "PB01"
+    ]
+  },
+  "performance": {
+    "total_return": -0.1320051312250572,
+    "annualized_return": -0.03553530977744246,
+    "volatility": 0.1241290750872693,
+    "sharpe_ratio": -0.22951108813776563,
+    "sortino_ratio": -0.27313535981345927,
+    "max_drawdown": -0.33360501923249336,
+    "drawdown_duration_bars": 935,
+    "calmar_ratio": -0.1065191101117021,
+    "num_round_trips": 17,
+    "win_rate": 0.29411764705882354,
+    "avg_win": 0.06222536628346269,
+    "avg_loss": -0.025233033171337904,
+    "avg_holding_period_bars": 38.411764705882355,
+    "turnover_per_bar": 0.033468559837728194,
+    "total_cost_paid": 0.038292746408781435
+  }
+}

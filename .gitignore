@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.DS_Store
+Phase2/data/*
+!Phase2/data/.gitkeep
+Phase2/results/*
+!Phase2/results/.gitkeep
+*.egg-info/
+.venv/
